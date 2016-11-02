@@ -33,7 +33,14 @@ body {
 
     .login-wrapper {
         width: 50%;
-    }    
+    }
+}
+
+@media(max-width: 768px) {
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 80%;
+    }
 }
 
 @media(max-width: 640px) {
@@ -44,7 +51,9 @@ body {
 
     .login-wrapper {
         width: 100%;
-    }    
+    }
+
+
 }
 
 .digital-content {
