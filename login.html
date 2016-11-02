@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión | Admin DC Pacha Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="background col"></div>
+        <div class="login-wrapper col">
+            <div class="login-container">
+                <div class="digital-content">
+                    <img src="images/digital-content-login.jpg" alt="Digital Content">
+                </div>
+                <form action="/admin/login/?next=/admin/" method="post" id="login-form">
+
+                  <div class="form-row">
+                    <label class="required" for="id_username">Nombre de usuario:</label>
+                    <input id="id_username" maxlength="254" name="username" type="text" />
+                  </div>
+                  <div class="form-row">
+                    <label class="required" for="id_password">Contraseña:</label>
+                    <input id="id_password" name="password" type="password" />
+                    <input type="hidden" name="next" value="/admin/" />
+                  </div>
+                  
+                  
+                  <div class="submit-row">
+                    <label>&nbsp;</label><input type="submit" value="Iniciar sesión" />
+                  </div>
+                </form>
+
+                <div id="copyright">
+                    &copy; 2016 Pacha Studio S.A.C
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

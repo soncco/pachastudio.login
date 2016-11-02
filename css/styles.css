@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: Raleway, sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.col {
+    float: left;
+}
+
+.background {
+    background: url('../images/login.jpg') no-repeat top center;
+    background-size:cover;
+    width: 60%;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 40%;
+    height: 100vh;
+
+}
+
+@media(max-width: 1024px) {
+    .background {
+        width: 50%;
+    }
+
+    .login-wrapper {
+        width: 50%;
+    }    
+}
+
+@media(max-width: 640px) {
+    .background {
+        background-size:cover;
+        width: 0;
+    }
+
+    .login-wrapper {
+        width: 100%;
+    }    
+}
+
+.digital-content {
+    text-align:  center;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    padding: 40px;
+    padding-top: 20%;
+    text-align: center 
+}
+
+.login-container .form-row {
+    margin-bottom: 10px;
+}
+
+.login-container label {
+    display: block;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 5px 8px;
+    width: 60%;
+    margin-top:  2px;
+    color: #666;
+}
+
+.login-container input[type="submit"] {
+    background: #FF4106;
+    color: #fff;
+    border:  0;
+    padding: 8px 10px;
+}
+
+#copyright {
+    font-size: 90%;
+    margin-top: 40px;
+}
